@@ -1,0 +1,2 @@
+[workspace]
+members = ["queryer", "queryer-py", "queryer-node"]
