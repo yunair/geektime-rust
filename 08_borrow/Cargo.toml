@@ -1,0 +1,29 @@
+[package]
+name = "borrow"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[[bin]]
+name = "ownership_reference"
+path = "src/ownership_reference.rs"
+
+[[bin]]
+name = "heap_reference_stack"
+path = "src/heap_reference_stack.rs"
+
+[[bin]]
+name = "heap_reference_stack_outlive"
+path = "src/heap_reference_stack_outlive.rs"
+
+[[bin]]
+name = "local_ref"
+path = "src/local_ref.rs"
+
+[[bin]]
+name = "vec_grow"
+path = "src/vec_grow.rs"
+
+[dependencies]
