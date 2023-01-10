@@ -1,0 +1,21 @@
+[package]
+name = "smart_pointers"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "allocator"
+path = "src/allocator.rs"
+
+[[bin]]
+name = "borrow"
+path = "src/borrow.rs"
+
+[[bin]]
+name = "cow1"
+path = "src/cow1.rs"
+
+
+[dependencies]
+url = "2"
