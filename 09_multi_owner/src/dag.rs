@@ -1,6 +1,7 @@
 use std::rc::Rc;
 
 #[derive(Debug)]
+#[allow(dead_code)]
 struct Node {
     id: usize,
     downstream: Option<Rc<Node>>,
