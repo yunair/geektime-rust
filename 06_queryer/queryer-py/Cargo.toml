@@ -11,7 +11,7 @@ crate-type = ["cdylib"] # 使用 cdylib 类型
 queryer = { path = "../queryer" }              # 引入 queryer
 tokio = { version = "1", features = ["full"] }
 [dependencies.pyo3] # 引入 pyo3
-version = "0.17.3"
+version = "0.18"
 features = ["extension-module"]
 [build-dependencies]
-pyo3-build-config = "0.17.3"
+pyo3-build-config = "0.18"

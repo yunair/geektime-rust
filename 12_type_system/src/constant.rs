@@ -1,5 +1,3 @@
-use std::borrow::Cow;
-
 const PI: f64 = std::f64::consts::PI;
 static E: f32 = std::f32::consts::E;
 fn main() {

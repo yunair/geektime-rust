@@ -6,7 +6,7 @@ use std::{
 };
 
 // Rc 既不是 Send，也不是 Sync
-#[allow(dead_code)]
+#[allow(unused_variables, dead_code)]
 fn rc_is_not_send_and_sync() {
     let a = Rc::new(1);
     let b = a.clone();
@@ -27,7 +27,7 @@ fn refcell_is_send() {
 }
 
 // RefCell 现在有多个 Arc 持有它，虽然 Arc 是 Send/Sync，但 RefCell 不是 Sync
-#[allow(dead_code)]
+#[allow(unused_variables, dead_code)]
 fn refcell_is_not_sync() {
     let a = Arc::new(RefCell::new(1));
     let b = a.clone();
