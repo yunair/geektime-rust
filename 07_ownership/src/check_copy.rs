@@ -22,15 +22,15 @@ fn types_impl_copy_trait() {
 }
 fn types_not_impl_copy_trait() {
     // unsized or dynamic sized type is not Copy
-    is_copy::<str>();
-    is_copy::<[u8]>();
-    is_copy::<Vec<u8>>();
-    is_copy::<String>();
+    // is_copy::<str>();
+    // is_copy::<[u8]>();
+    // is_copy::<Vec<u8>>();
+    // is_copy::<String>();
     // mutable reference is not Copy
-    is_copy::<&mut String>();
+    // is_copy::<&mut String>();
     // array / tuple with values that not Copy is not Copy
-    is_copy::<[Vec<u8>; 4]>();
-    is_copy::<(String, u32)>();
+    // is_copy::<[Vec<u8>; 4]>();
+    // is_copy::<(String, u32)>();
 }
 fn main() {
     types_impl_copy_trait();
